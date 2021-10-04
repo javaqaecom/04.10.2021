@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class passwordCHecker {
+    public static void main(String[] args) {
+        // Targel 1 : recive a password from the user and return accepted if the password matches Hh15752
+        String password;
+        Scanner sc1= new Scanner (System.in);
+        System.out.println("please enter your password : ");
+        password=sc1.next();
+        if(password.equals("Hh15752")){//check if the password matches Hh15752
+            System.out.println("accepted");
+        }
+        else{
+            System.out.println("access denied !!!!!!");
+        }
+
+
+        //Targel 2: recive from the user 3 numbers and print the greater
+        int x,y,z;
+        System.out.println("please enter the first number");
+        x=sc1.nextInt();
+        System.out.println("please enter the second number");
+        y=sc1.nextInt();
+        System.out.println("please enter the third number");
+        z=sc1.nextInt();
+        if ((x>y)&&(x>z)){//check if x is the greater number
+            System.out.println(x);
+        }
+        if ((y>x)&&(y>z)){//check if y is the greater number
+            System.out.println(y);
+        }
+        if ((z>x)&&(z>y)){//check if z is the bigger number
+            System.out.println(z);
+        }
+// with else
+        if ((x>y)&&(x>z)){// check if x is the bigger number
+            System.out.println(x);
+        }
+        else {// if x isn't the greater so this
+            if ((y>x)&&(y>z)){//check if ty is the greater number
+            System.out.println(y);
+            }
+            else {// if y and x aren't the greater print z
+            System.out.println(z);
+            }
+        }
+    }
+}
