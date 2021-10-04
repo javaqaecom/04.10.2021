@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class coditionAndIf {
+    public static void main(String[] args) {
+        Scanner sc1= new Scanner(System.in);
+        System.out.println("the first number is:");
+        int x=sc1.nextInt();
+        System.out.println("the second number is:");
+        int y=sc1.nextInt();
+        if ((x>0)&&(y>0)) { // checks if  the tow numbers are positive numbers
+            System.out.println("tow positive  ");
+         }
+        if ((x>0)||(y>0)) { // check if one of the number at least positive
+            System.out.println("at least one of the numbers is positive");
+        }
+        System.out.println("out of if ");
+        if (false){
+            System.out.println(x*10);
+        }
+        else {
+            System.out.println(x*100);
+        }
+
+
+
+    }
+}
+  
