@@ -1,0 +1,43 @@
+
+public class pro2 {
+    public static void main(String[] args) {
+        int x=8,y=-87,z=0; //+- 2147483647
+        short s1=144; // +-32768
+        byte b1 = 12;//+- 127
+        long l1=888l;//+-92,233,2,036,854,775,808
+        float f1= 8.8f;
+        double d1= 1548.13;
+        boolean boolean1=true;// true or false
+        char ch1 = 'b';// a single char
+        short sh1,sh2;
+        sh1 = 855;
+        sh2 = 400;
+        x=855;//x=855
+        System.out.println(x);
+        sh2=(short)x;//x=855
+        System.out.println(sh2);
+        double d3=8.9;
+        x=(int)d3;// casting
+        System.out.println(x);//x=8
+        String txt;
+        txt= "my name is jack"; // \' => ',\" => ", \\=>\
+        System.out.println(txt);
+        System.out.println("your text length is :"+txt.length());//prints the length of the text with spaces
+        System.out.println("search name in the text " +txt.indexOf("name") );// the location of the word in the string object
+        String firstName="shir";
+        String lastName=" yakov";
+        System.out.println(firstName + lastName);
+        System.out.println(firstName.concat(lastName));//add string to another
+        String n1 = "10";
+        int n2 = 20;
+        System.out.println(n1+n2);
+        System.out.println("10"+20);
+        int n3 =30;
+        System.out.println(n2+n3);
+        System.out.println(20+30);
+        String n4 ="20";
+        System.out.println(n1+n4);
+
+    }
+}
+
